@@ -62,3 +62,11 @@ a{
     background-color: #cfc91d;
     color: #0b1016;
 }
+
+#logo{
+
+    transition: .5s;
+}
+#logo:hover{
+    opacity: .7;
+}
