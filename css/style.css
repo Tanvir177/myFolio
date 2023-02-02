@@ -1,0 +1,64 @@
+/* common css here  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline:0;
+
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+
+}
+a{
+    text-decoration: none;
+}
+
+/* common css here */
+
+
+
+/* navbar starts */
+
+#navbar{
+    background-color: #02918b;
+}
+
+#navbar div.row{
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar ul li a{
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 12px 25px;
+    font-size: 12px;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 14px 0;
+    transition: .7s;
+    border-radius: 2px 15px  2px 15px;
+    
+}
+
+#navbar ul li:hover a{
+    background-color: #cfc91d;
+    color: #0b1016;
+}
