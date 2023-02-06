@@ -79,7 +79,7 @@ a {
 
 #home {
     height: 728px;
-    background-image: url(imgLogo/backgrounf.jpg);
+    background-image: url(./imgLogo/backgrounf.jpg);
     background-size: cover;
     background-position: center;
     color: #ffff;
