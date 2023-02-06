@@ -1,72 +1,205 @@
 /* common css here  */
-*{
+* {
     margin: 0;
     padding: 0;
+    outline: 0;
     box-sizing: border-box;
-    outline:0;
-
 }
 
-body{
+body {
     font-family: 'Open Sans', sans-serif;
+    
 }
 
-.container{
+.container {
     width: 1170px;
     margin: auto;
 }
 
-.row{
+.row {
     display: flex;
     flex-wrap: wrap;
 }
 
-ul{
+ul {
     list-style-type: none;
-
 }
-a{
+
+a {
     text-decoration: none;
 }
 
-/* common css here */
-
-
-
-/* navbar starts */
-
-#navbar{
+/* common css here  */
+#navbar {
     background-color: #02918b;
+
+
+
+
 }
 
-#navbar div.row{
-
-  justify-content: space-between;
-  align-items: center;
+#navbar div.row {
+    justify-content: space-between;
+    align-items: center;
 }
 
-#navbar ul li a{
-    display: inline-block;
+#navbar .row ul {
+    display: flex;
+
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 18px 25px;
+    margin: 8px 0;
+    color: #ffff;
     text-transform: uppercase;
-    padding: 12px 25px;
     font-size: 12px;
     font-weight: 800;
-    color: #ffffff;
-    margin: 14px 0;
-    transition: .7s;
-    border-radius: 2px 15px  2px 15px;
-    
-}
+    transition: .3s;
 
+}
 #navbar ul li:hover a{
     background-color: #cfc91d;
     color: #0b1016;
 }
 
-#logo{
 
-    transition: .5s;
+#logo {
+
+    transition: .2s;
 }
-#logo:hover{
+
+#logo:hover {
     opacity: .7;
 }
+
+/* nav css ends here  */
+
+
+#home {
+    height: 728px;
+    background-image: url(/imgLogo/backgrounf.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #ffff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+#home::after {
+    content: '';
+    position: absolute;
+    background: black;
+    inset: 0;
+    z-index: -1;
+    opacity: .5;
+
+}
+
+#home .container {
+    height: 100%;
+
+}
+
+#home .row {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#home img {
+    margin: 52px auto;
+    display: block;
+}
+
+#home h3 {
+    font-size: 30px;
+    font-weight: 400;
+
+}
+
+#home h1 {
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+}
+
+#home p {             
+    font-size: 18px;
+}
+
+#home a {
+    font-size: 14px;
+    color: #0b1016;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #cfc91d;
+    padding: 19px 42px;
+    display: inline-block;
+    letter-spacing: 2px;
+    transition: .5s;
+}
+#home a:hover{
+    background-color: #ada925;
+    border-radius: 3px;
+    
+}
+/* home ends here  */
+
+
+
+/* aboutme sectiom starts here  */
+#aboutMe{
+    height: 739px;
+    color: #7e8287;
+}
+#aboutMe .first{
+    margin-top: 97px;
+       text-align: center; 
+    
+}
+#aboutMe h1{
+    font-size: 46px;
+    font-weight: 800;
+    color: #02918c;
+}
+#aboutMe .first img{
+    margin: 30px 0;
+}
+
+#aboutMe .container .first p{
+    /* text-align: justify;
+    text-align-last: center; */
+    font-size: 16px;
+    width: 874px;
+    margin: auto;    
+    line-height: 1.8;
+   
+    
+}
+#aboutMe strong{
+    font-size: 23px;
+    font-weight: 800;
+}
+
+#aboutMe .row{
+    margin-top: 119px;
+    justify-content:space-evenly;
+    text-align: center;
+}
+
+#aboutMe .row h4{
+    margin-top: 30px;
+    margin-bottom: 35px;
+    font-size: 16px;
+    font-weight: 800;
+}
+#aboutMe .row p{
+    line-height: 1.8;
+    font-size: 11px;
+}
+/* aboutme sectiom ends here */
+
